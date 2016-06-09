@@ -1,5 +1,7 @@
-﻿using System;
+﻿using AnadiendoFuncionalidades.Models;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +14,7 @@ namespace AnadiendoFuncionalidades
     {
         protected void Application_Start()
         {
+            Database.SetInitializer(new BlogInitializer()); // Set default initializer
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
