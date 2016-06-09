@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curso-MVC5", "Curso-MVC5\Curso-MVC5.csproj", "{EC8B5832-D335-47AB-92DB-1F40FB173940}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnadiendoFuncionalidades", "AnadiendoFuncionalidades\AnadiendoFuncionalidades.csproj", "{D94B8A96-BBC7-4240-9F1C-FEF8C44565CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EC8B5832-D335-47AB-92DB-1F40FB173940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC8B5832-D335-47AB-92DB-1F40FB173940}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC8B5832-D335-47AB-92DB-1F40FB173940}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC8B5832-D335-47AB-92DB-1F40FB173940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94B8A96-BBC7-4240-9F1C-FEF8C44565CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94B8A96-BBC7-4240-9F1C-FEF8C44565CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94B8A96-BBC7-4240-9F1C-FEF8C44565CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94B8A96-BBC7-4240-9F1C-FEF8C44565CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
