@@ -19,5 +19,30 @@ namespace AnadiendoFuncionalidades.Controllers
                 return View(posts);                     //Vista por defecto: Index
             }
         }
+
+        // 
+        // GET /Blog/Archive/2005/3 
+        public ActionResult Archive(int year, int month)
+        {
+            using (var manager = new BlogManager())
+            {
+                var posts = manager.GetPostsByDate(year, month);
+                return View(posts);
+            }
+        }
+
+        //
+        // GET /Blog/Hello-world
+        public ActionResult ViewPost(string code)
+        {
+            using (var manager = new BlogManager())
+            {
+                var post = manager.GetPost(code);
+                if (post == null)
+                    return HttpNotFound();
+                else
+                    return View(post);
+            }
+        }
     }
 }

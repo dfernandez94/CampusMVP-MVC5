@@ -1,0 +1,14 @@
+﻿@model AnadiendoFuncionalidades.Models.Post
+
+@{
+    ViewBag.Title = "ViewPost";
+}
+
+<h2>@Model.Title</h2>
+<div class="post-body">
+    @Model.Text
+</div>
+<p>
+    Posted by @Model.Author
+    on @Model.Date.ToLongDateString()
+</p>
