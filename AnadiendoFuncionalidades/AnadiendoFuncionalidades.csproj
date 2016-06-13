@@ -178,6 +178,7 @@
     <Compile Include="Models\BlogContext.cs" />
     <Compile Include="Models\BlogInitializer.cs" />
     <Compile Include="Models\BlogManager.cs" />
+    <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Post.cs" />

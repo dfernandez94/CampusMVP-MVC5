@@ -10,15 +10,21 @@ namespace AnadiendoFuncionalidades.Models
     {
         protected override void Seed(BlogContext context)
         {
-            
-            context.Posts.Add(new Post()
-            {
-                Author = "José M. Aguilar",
-                Title = "Hello, world!",
-                Code = "hello-world",
-                Date = new DateTime(2005, 8, 12),
-                Text = "Hi, everybody, this is my first blog post!"
-            });
+
+            context.Posts.Add(
+               new Post()
+               {
+                   Author = "José M. Aguilar",
+                   Title = "Hello, world!",
+                   Code = "hello-world",
+                   Date = new DateTime(2005, 8, 12),
+                   Text = "Hi, everybody, this is my first blog post!",
+                   Comments = new[] {
+                     new Comment() { Author = "John Doe", Date = new DateTime(2005, 8,13), Text="Hey, this is great!" },
+                     new Comment() { Author = "Peter Petersen", Date = new DateTime(2005, 8,14), Text="Good news! Keep writing, please :)" }
+                  }
+               }
+            );
             context.Posts.Add(new Post()
             {
                 Author = "José M. Aguilar",

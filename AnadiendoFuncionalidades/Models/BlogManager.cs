@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace AnadiendoFuncionalidades.Models
 {
@@ -28,7 +29,7 @@ namespace AnadiendoFuncionalidades.Models
 
         public Post GetPost(string code)
         {
-            return _data.Posts.FirstOrDefault(post => post.Code == code);
+            return _data.Posts.Include(p => p.Comments).FirstOrDefault(post => post.Code == code);
         }
 
         public void Dispose()

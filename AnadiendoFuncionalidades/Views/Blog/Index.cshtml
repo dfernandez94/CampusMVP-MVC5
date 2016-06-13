@@ -9,6 +9,7 @@
     {
         <li>
             <h3>@post.Title</h3>
+            @Html.ActionLink("Read post...", "ViewPost", new { code = post.Code} ) 
             <div>
                 Posted by @post.Author on @post.Date.ToLongDateString()
             </div>

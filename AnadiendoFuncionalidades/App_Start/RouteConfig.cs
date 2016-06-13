@@ -14,9 +14,9 @@ namespace AnadiendoFuncionalidades
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-               name: "post",
-               url: "blog/{code}",
-               defaults: new { controller = "Blog", action = "ViewPost" }
+                name: "post",
+                url: "view/{code}",
+                defaults: new { controller = "Blog", action = "ViewPost" }
             );
 
             routes.MapRoute(
@@ -24,6 +24,7 @@ namespace AnadiendoFuncionalidades
                url: "blog/archive/{year}/{month}",
                defaults: new { controller = "Blog", action = "Archive" }
             );
+
 
             routes.MapRoute(
                name: "Default",

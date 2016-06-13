@@ -1,7 +1,6 @@
 ﻿@model AnadiendoFuncionalidades.Models.Post
-
 @{
-    ViewBag.Title = "ViewPost";
+    ViewBag.Title = Model.Title;
 }
 
 <h2>@Model.Title</h2>
@@ -12,3 +11,23 @@
     Posted by @Model.Author
     on @Model.Date.ToLongDateString()
 </p>
+
+@if (Model.Comments.Any())
+{
+    <h4>Comments</h4>
+    <ul>
+
+        @foreach (var comment in Model.Comments)
+        {
+            <li>
+
+                <div>@comment.Text</div>
+                <div>
+                    @comment.Author
+                    @comment.Date.ToShortDateString()
+                </div>
+            </li>
+        }
+    </ul>
+}
+
