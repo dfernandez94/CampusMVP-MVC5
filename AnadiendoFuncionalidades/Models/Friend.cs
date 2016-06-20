@@ -21,6 +21,8 @@ namespace AnadiendoFuncionalidades.Models
         [Phone]
         public string telefono { get; set;  }
 
+        public Address address { get; set;  }
+
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             if(email==null && telefono==null)
@@ -28,5 +30,7 @@ namespace AnadiendoFuncionalidades.Models
                     "Introduce el email o telefono",        // Error message
                     new[] { "email", "telefono" });            // Invalid property
         }
+
+
     }
 }

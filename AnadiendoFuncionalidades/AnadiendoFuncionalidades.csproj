@@ -178,6 +178,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Address.cs" />
     <Compile Include="Models\BlogContext.cs" />
     <Compile Include="Models\BlogInitializer.cs" />
     <Compile Include="Models\BlogManager.cs" />
@@ -248,6 +249,7 @@
     <Content Include="Views\Blog\Index.cshtml" />
     <Content Include="Views\Blog\Archive.cshtml" />
     <Content Include="Views\Friends\Edit.cshtml" />
+    <Content Include="Views\Friends\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

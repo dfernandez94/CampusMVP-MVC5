@@ -1,0 +1,31 @@
+﻿@model AnadiendoFuncionalidades.Models.Friend
+
+@Html.ValidationSummary()
+<form method="post" action="/friends/create">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" value="@Model.Name">
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" value="@Model.Age">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" value="@Model.email">
+    </div>
+    <div>
+        <label for="telefono">Telefono:</label>
+        <input type="text" name="telefono" id="telefono" value="@Model.telefono">
+    </div>
+
+    <div>
+        <label for="street">Street:</label>
+        <input type="text" name="address.street" id="street" value="@Model.address.Street">
+    </div>
+    <div>
+        <label for="zipCode">ZipCode:</label>
+        <input type="text" name="address.zipCode" id="zipCode" value="@Model.address.ZipCode">
+    </div>
+    <input type="submit">
+</form>
