@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnadiendoFuncionalidades", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "actionResultPersonalizado", "actionResultPersonalizado\actionResultPersonalizado.csproj", "{667639DE-DF6E-4C76-9AA4-4B26D4FB9052}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filtros", "Filtros\Filtros.csproj", "{18A718C6-7581-4DD1-9FB6-971941E1B511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDGestionEntidades", "CRUDGestionEntidades\CRUDGestionEntidades.csproj", "{FF45822E-2D0B-40F1-AF6A-D611B60AF8AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{667639DE-DF6E-4C76-9AA4-4B26D4FB9052}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{667639DE-DF6E-4C76-9AA4-4B26D4FB9052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{667639DE-DF6E-4C76-9AA4-4B26D4FB9052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18A718C6-7581-4DD1-9FB6-971941E1B511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18A718C6-7581-4DD1-9FB6-971941E1B511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18A718C6-7581-4DD1-9FB6-971941E1B511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18A718C6-7581-4DD1-9FB6-971941E1B511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF45822E-2D0B-40F1-AF6A-D611B60AF8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF45822E-2D0B-40F1-AF6A-D611B60AF8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF45822E-2D0B-40F1-AF6A-D611B60AF8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF45822E-2D0B-40F1-AF6A-D611B60AF8AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
