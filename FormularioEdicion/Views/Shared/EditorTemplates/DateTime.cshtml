@@ -1,0 +1,27 @@
+﻿@model DateTime?
+
+<script type="text/javascript">
+   $(function () {
+       $("#@Html.IdForModel()").datepicker({
+           format: 'dd/mm/yyyy'
+       });
+   });
+</script>
+@if (Model != null)
+{
+    @Html.TextBox(
+        "",                                     // Property name
+        Model.Value.ToString("dd/MM/yyyy"),           // Default value (formatted)
+        new { maxlength = 10, @class = "date" }   // HTML attributes
+    )
+}
+else
+{
+    @Html.TextBox(
+        "",                                     // Property name
+        "",           // Default value (formatted)
+        new { maxlength = 10, @class = "date" }   // HTML attributes
+    )
+}
+
+(mm/dd/yyyy)

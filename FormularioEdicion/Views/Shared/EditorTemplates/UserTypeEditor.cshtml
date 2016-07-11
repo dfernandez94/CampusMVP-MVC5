@@ -1,0 +1,29 @@
+﻿@model int?
+
+@{
+    int a = 0;
+    if (Model != null)
+    {
+        a = Model.Value;
+    }
+
+    IEnumerable<FormularioEdicion.Models.UserType> userTypes = ViewBag.UserType;
+    List<SelectListItem> listItems = new List<SelectListItem>();
+    foreach (var item in userTypes)
+    {
+        SelectListItem i = new SelectListItem();
+        i.Text = item.Name+" pepito";
+        i.Value = item.Id.ToString();
+        i.Selected = a == item.Id;
+
+        listItems.Add(i);
+    }
+
+    //Html.DropDownList("", listItems);
+
+    @Html.DropDownListFor(
+           model => Model,
+           listItems
+        )
+}
+

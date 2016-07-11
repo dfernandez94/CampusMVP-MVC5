@@ -1,0 +1,72 @@
+﻿@model FormularioEdicion.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jQuery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+<link href="~/Content/bootstrap-datepicker.css" rel="stylesheet"/>
+
+@{ Html.EnableClientValidation(); }
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit", "user"))
+{
+    <div>
+        @Html.ValidationMessageFor(model => model.name)
+        @Html.LabelFor(model => model.name)
+        @Html.TextBoxFor(model => model.name)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.nickName)
+        @Html.TextBoxFor(model => model.nickName)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.type)
+        @Html.EditorFor(model => model.type);
+        
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.email)
+        @Html.TextBoxFor(model => model.email)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.password)
+        @Html.TextBoxFor(model => model.password)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.rePassword)
+        @Html.TextBoxFor(model => model.rePassword)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.birthdate)
+        @Html.EditorFor(model => model.birthdate)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.enabled)
+        @Html.CheckBoxFor(model => model.enabled)
+    </div>
+
+    <input type="submit" value="Enviar">
+
+
+    @Html.EditorFor(model => model)
+
+
+
+    @Html.ValidationSummary()
+
+
+
+}
